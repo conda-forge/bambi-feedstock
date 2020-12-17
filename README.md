@@ -5,11 +5,9 @@ Home: http://github.com/bambinos/bambi
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bambi-feedstock/blob/master/LICENSE.txt)
 
 Summary: BAyesian Model Building Interface in Python
-
-
 
 Current build status
 ====================
