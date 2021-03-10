@@ -11,26 +11,29 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
-    - numpy
-    - pandas
-    - patsy
-    - pymc3
-    - statsmodels
-    - matplotlib-base
+    - python >=3.6
+    - arviz >=0.10.0
+    - formulae >=0.0.6
+    - numpy >=1.16.1
+    - pandas >=1.0.0
+    - pymc3 >=3.9.0
+    - statsmodels >=0.9
 
 test:
   imports:
     - bambi
     - bambi.backends
-    - bambi.external
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: http://github.com/bambinos/bambi
