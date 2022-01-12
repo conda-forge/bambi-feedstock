@@ -1,4 +1,4 @@
-{% set version = "0.6.3" %}
+{% set version = "0.7.0" %}
 
 package:
   name: bambi
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/b/bambi/bambi-{{ version }}.tar.gz
-  sha256: c0eaba2f63a80df2bebe06f347c88c8427cb3b5efb4d2ef25e5568038e2509d2
+  sha256: 990458d2b7688200954abb959c7f14a61a6304aee0547f58b92bb548ffc4ce86
 
 build:
   number: 0
