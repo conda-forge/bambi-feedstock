@@ -23,14 +23,13 @@ requirements:
     - formulae ==0.2.0
     - numpy >=1.16.1,<1.22.0
     - pandas >=1.0.0
-    - pymc3 >=3.9.0
+    - pymc3 >=3.10
     - scipy >=1.7.0
     - statsmodels >=0.9
 
 test:
   imports:
     - bambi
-    - bambi.backends
   commands:
     - pip check
   requires:
