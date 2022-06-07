@@ -1,4 +1,4 @@
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 
 package:
   name: bambi
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/b/bambi/bambi-{{ version }}.tar.gz
-  sha256: 8f21acbe8422c4e9eba935e2887fb95436ff10d60abded1233dbbb98c6bc2364
+  sha256: 07951b6d9efb703e28b2d4d90d69ecad4c67a3a0f0be9f330444cb8ee9533522
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - formulae ==0.3.4
     - numpy >=1.16.1,<1.22.0
     - pandas >=1.0.0
-    - pymc3 >=3.11.5
+    - pymc ==4.0.0
     - scipy >=1.7.0
     - statsmodels >=0.9
 
