@@ -23,9 +23,9 @@ requirements:
     - formulae ==0.3.4
     - numpy >=1.16.1,<1.22.0
     - pandas >=1.0.0
-    - pymc ==4.0.0
+    - pymc >=4.0.0
     - scipy >=1.7.0
-    - statsmodels >=0.9
+    - setuptools >47.1.0
 
 test:
   imports:
