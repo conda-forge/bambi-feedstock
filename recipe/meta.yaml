@@ -1,17 +1,18 @@
+{% set name = "bambi" %}
 {% set version = "0.9.3" %}
 
 package:
-  name: bambi
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/b/bambi/bambi-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/bambi-{{ version }}.tar.gz
   sha256: 06113b1078005462d86057c2e277616a98e0202f8cb72469067b3d3c7d8d59cb
 
 build:
-  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
@@ -23,7 +24,7 @@ requirements:
     - formulae ==0.3.4
     - numpy >1.22
     - pandas >=1.0.0
-    - pymc >=4.0.0
+    - pymc >=5.0.0
     - scipy >=1.7.0
     - setuptools >47.1.0
 
@@ -37,10 +38,9 @@ test:
 
 about:
   home: http://github.com/bambinos/bambi
-  license: MIT
-  license_family: MIT
-  license_file: LICENSE
   summary: BAyesian Model Building Interface in Python
+  license: MIT
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:
