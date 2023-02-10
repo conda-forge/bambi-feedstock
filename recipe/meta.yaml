@@ -1,5 +1,5 @@
 {% set name = "bambi" %}
-{% set version = "0.9.3" %}
+{% set version = "0.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/bambi-{{ version }}.tar.gz
-  sha256: 06113b1078005462d86057c2e277616a98e0202f8cb72469067b3d3c7d8d59cb
+  sha256: b2ced9433afdd60f2dfc37769dcc3bf116baaa34ff6c34126baefad13fe8351e
 
 build:
   noarch: python
