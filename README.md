@@ -1,11 +1,11 @@
-About bambi
-===========
+About bambi-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bambi-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/bambinos/bambi
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bambi-feedstock/blob/main/LICENSE.txt)
 
 Summary: BAyesian Model Building Interface in Python
 

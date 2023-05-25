@@ -1,5 +1,5 @@
 {% set name = "bambi" %}
-{% set version = "0.10.0" %}
+{% set version = "0.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/bambi-{{ version }}.tar.gz
-  sha256: b2ced9433afdd60f2dfc37769dcc3bf116baaa34ff6c34126baefad13fe8351e
+  sha256: c6528870d2164515205870fa75cbf89b3c684f7a81023e3bff205058c771f9c1
 
 build:
   noarch: python
@@ -17,15 +17,17 @@ build:
 requirements:
   host:
     - python >=3.8
+    - setuptools >=61.0
     - pip
   run:
     - python >=3.8
-    - arviz >=0.12
-    - formulae ==0.3.4
+    - arviz >=0.12.0
+    - formulae >=0.4.0
     - python-graphviz
     - numpy >1.22
     - pandas >=1.0.0
-    - pymc >=5.0.0
+    - pymc >=5.4.0
+    - pytensor >=2.12.1
     - scipy >=1.7.0
     - setuptools >47.1.0
 
