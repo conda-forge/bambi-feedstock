@@ -1,13 +1,13 @@
 {% set name = "bambi" %}
-{% set version = "0.14.0" %}
+{% set version = "0.15.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/bambi-{{ version }}.tar.gz
-  sha256: 90438a3c248fc0c17b2862dfcec32e22861e5e4d68b4109a0ec0b141344b9c26
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/bambi-{{ version }}.tar.gz
+  sha256: 597d0bd6b7b04fa7b2c94ab33fc4f408d4fb0c8dcea4ec9798c5c154b9bec56e
 
 build:
   noarch: python
@@ -27,7 +27,7 @@ requirements:
     - python-graphviz
     - numpy >1.22
     - pandas >=1.0.0
-    - pymc >=5.16.1
+    - pymc >=5.18.0
     - pytensor >=2.12.3
     - scipy >=1.7.0
     - setuptools >47.1.0
