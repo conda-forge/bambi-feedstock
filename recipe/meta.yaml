@@ -1,6 +1,6 @@
 {% set name = "bambi" %}
-{% set version = "0.15.0" %}
-{% set python_min = "3.10" %}
+{% set version = "0.16.0" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/bambi-{{ version }}.tar.gz
-  sha256: 597d0bd6b7b04fa7b2c94ab33fc4f408d4fb0c8dcea4ec9798c5c154b9bec56e
+  sha256: ca3d1f1fc9523328e4e8c96a1ae0a019380e39abb33afc4b014bc7dd5c50ae88
 
 build:
   noarch: python
@@ -23,15 +23,12 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - arviz >=0.12.0
+
+    - arviz >=0.20.0
     - formulae >=0.5.3
     - python-graphviz
-    - numpy >1.22
     - pandas >=1.0.0
-    - pymc >=5.18.0
-    - pytensor >=2.12.3
-    - scipy >=1.7.0
-    - setuptools >47.1.0
+    - pymc >=5.26.1
 
 test:
   imports:
@@ -43,7 +40,7 @@ test:
     - pip
 
 about:
-  home: http://github.com/bambinos/bambi
+  home: https://github.com/bambinos/bambi
   summary: BAyesian Model Building Interface in Python
   license: MIT
   license_file: LICENSE
