@@ -1,6 +1,6 @@
 {% set name = "bambi" %}
 {% set version = "0.16.0" %}
-{% set python_min = "3.10" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -23,15 +23,12 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
+
     - arviz >=0.20.0
     - formulae >=0.5.3
     - python-graphviz
-    - numpy >1.22
     - pandas >=1.0.0
     - pymc >=5.26.1
-    - pytensor >=2.12.3
-    - scipy >=1.7.0
-    - setuptools >47.1.0
 
 test:
   imports:
@@ -43,7 +40,7 @@ test:
     - pip
 
 about:
-  home: http://github.com/bambinos/bambi
+  home: https://github.com/bambinos/bambi
   summary: BAyesian Model Building Interface in Python
   license: MIT
   license_file: LICENSE
