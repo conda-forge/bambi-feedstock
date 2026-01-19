@@ -2,8 +2,8 @@ schema_version: 1
 
 context:
   name: bambi
-  version: "0.16.0"
-  python_min: "3.11"
+  version: 0.17.2
+  python_min: '3.11'
 
 package:
   name: ${{ name|lower }}
@@ -11,10 +11,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/bambi-${{ version }}.tar.gz
-  sha256: ca3d1f1fc9523328e4e8c96a1ae0a019380e39abb33afc4b014bc7dd5c50ae88
+  sha256: cde4798a8a0ed04e4e033689409e000f074c895b29cac0548127af6478ef42f9
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -26,12 +26,13 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - arviz >=0.20.0
-    - formulae >=0.5.3
+    - formulae >=0.6.0,<0.7.0
     - python-graphviz
     - pandas >=1.0.0
-    - pymc >=5.26.1
-
+    - pymc >=5.27.0,<6
+    - matplotlib-base >=3.9.0
+    - sparse >=0.17.0,<0.18
+    - arviz-plots >=0.8.0,<1
 tests:
   - python:
       imports:
