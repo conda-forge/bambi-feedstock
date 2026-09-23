@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: bambi
-  version: "0.20.0"
+  version: "0.21.0"
   python_min: '3.12'
 
 package:
@@ -10,8 +10,8 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/bambi-${{ version }}.tar.gz
-  sha256: 63cea73674d495de67ce04a965909c6840d57f71f1c005c99d802fc06532dff5
+  url: https://files.pythonhosted.org/packages/56/8e/101a4ab5a9f9e41ba0b2a69590303617e11e123b78f0e56191b04c631ae1/bambi-${{ version }}.tar.gz
+  sha256: 68c096406d9426c2d244512b373c2f3b0123a553faf22ddf500b2a2400b60e85
 
 build:
   number: 0
